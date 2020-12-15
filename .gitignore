@@ -1,0 +1,9 @@
+**/build/*
+**/*.swp
+**/.settings
+
+/src/test/resources/test-output
+target/*
+data/*
+out/*
+.idea/*
