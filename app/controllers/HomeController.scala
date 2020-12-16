@@ -26,7 +26,4 @@ class HomeController @Inject()(cc: ControllerComponents) (implicit assetsFinder:
     Ok(views.html.hello(name))
   }
 
-  def swagger = Action {
-    Ok(views.html.swagger())
-  }
 }

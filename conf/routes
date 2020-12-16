@@ -3,9 +3,7 @@
 # ~~~~
 
 # An example controller showing a sample home page
-#GET     /                           controllers.HomeController.index
-
-GET     /swagger.json               controllers.ApiHelpController.getResources
+GET     /                           controllers.HomeController.index
 
 # An example controller showing how to use dependency injection
 GET     /count                      controllers.CountController.count
@@ -18,5 +16,6 @@ GET     /assets/*file               controllers.Assets.versioned(file)
 # Hello world
 GET     /hello                      controllers.HomeController.hello(name: String)
 
-GET /swagger-ui controllers.Assets.at(path = "/public/swagger-ui", file="index.html")
-GET /swagger-ui/*file  controllers.Assets.at(path = "/public/swagger-ui", file)
+GET     /swagger.json               controllers.ApiHelpController.getResources
+GET     /swagger-ui                 controllers.Assets.at(path = "/public/swagger-ui", file="index.html")
+GET     /swagger-ui/*file           controllers.Assets.at(path = "/public/swagger-ui", file)

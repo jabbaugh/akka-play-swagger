@@ -7,3 +7,6 @@ target/*
 data/*
 out/*
 .idea/*
+project/target/*
+project/project/*
+logs/*
