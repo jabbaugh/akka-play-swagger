@@ -16,7 +16,7 @@ import io.swagger.annotations._
  * object is injected by the Guice dependency injection system.
  */
 @Singleton
-@Api(value = "/count", description = "Operations about pets")
+@Api(value = "/count")
 class CountController @Inject() (cc: ControllerComponents,
                                  counter: Counter) extends AbstractController(cc) {
 

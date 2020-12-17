@@ -16,6 +16,10 @@ GET     /assets/*file               controllers.Assets.versioned(file)
 # Hello world
 GET     /hello                      controllers.HomeController.hello(name: String)
 
+GET     /stream-schedule-definition controllers.StreamScheduleDefinitionController.getAllStreamScheduleDefinitions()
+GET     /stream-schedule-definition/*id controllers.StreamScheduleDefinitionController.getStreamScheduleDefinition(id: Int)
+POST    /stream-schedule-definition controllers.StreamScheduleDefinitionController.updateStreamScheduleDefinition()
+
 GET     /swagger.json               controllers.ApiHelpController.getResources
 GET     /swagger-ui                 controllers.Assets.at(path = "/public/swagger-ui", file="index.html")
 GET     /swagger-ui/*file           controllers.Assets.at(path = "/public/swagger-ui", file)
