@@ -20,6 +20,10 @@ GET     /stream-schedule-definition controllers.StreamScheduleDefinitionControll
 GET     /stream-schedule-definition/*id controllers.StreamScheduleDefinitionController.getStreamScheduleDefinition(id: Int)
 POST    /stream-schedule-definition controllers.StreamScheduleDefinitionController.updateStreamScheduleDefinition()
 
+// Server Configuration
+GET     /server-configuration controllers.StreamScheduleDefinitionController.getAllStreamScheduleDefinitions()
+GET     /server-configuration/*id controllers.StreamScheduleDefinitionController.getStreamScheduleDefinition(id: Int)
+
 GET     /swagger.json               controllers.ApiHelpController.getResources
 GET     /swagger-ui                 controllers.Assets.at(path = "/public/swagger-ui", file="index.html")
 GET     /swagger-ui/*file           controllers.Assets.at(path = "/public/swagger-ui", file)

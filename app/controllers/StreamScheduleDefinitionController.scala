@@ -2,7 +2,7 @@ package controllers
 
 import javax.inject._
 import io.swagger.annotations.{ Api, ApiOperation }
-import models.StreamScheduleDefinition
+import models.{ StreamScheduleDefinition, UniverseConfiguration }
 import play.api.mvc.{ AbstractController, ControllerComponents }
 import play.api.libs.json._
 
@@ -18,7 +18,7 @@ class StreamScheduleDefinitionController @Inject()(cc: ControllerComponents)(imp
     httpMethod = "GET",
   )
   def getAllStreamScheduleDefinitions() = Action {
-    val strSchDef = List(StreamScheduleDefinition(0))
+    val strSchDef = List()
     Ok(views.html.hello(strSchDef.toString))
   }
 
